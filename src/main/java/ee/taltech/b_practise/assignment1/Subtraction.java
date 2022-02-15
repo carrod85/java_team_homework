@@ -5,12 +5,16 @@ public class Subtraction {
     //todo A create a static function that takes in two ints
     // and returns the result of subtracting second element from the first
     // P.S pay attention to function and parameter names
+    private static int substraction(int first, int second){
+        return first - second;
+    }
 
     public static void main(String[] args) {
         //todo B
         // - call your newly created function with 5 and 2, print out the result
         // - call your newly created function with -5 and -2, print out the result
-
+        System.out.println(substraction(5,2));
+        System.out.println(substraction(-5,-2));
 
 
         //todo C if you were to add another method
@@ -20,7 +24,7 @@ public class Subtraction {
         // c) overriding?
         // d) overreacting?
         // e) overlooking?
-        // Answer:
+        // Answer: overloading
     }
 }
 
