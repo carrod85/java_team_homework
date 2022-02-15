@@ -1,0 +1,7 @@
+# Project exclude paths
+.gradle
+.idea
+*.iml
+build
+out
+ics0014-test1.zip
