@@ -25,4 +25,8 @@ class PowerOf3Test {
 
     //todo B you decide what happens on null input, write a test and logic :)
     // don't worry about nulls inside the list (1, null, 3)
+    @Test
+    void powerOf3_on_null_input() {
+        assertEquals(null, PowerOf3.toThePowerOfThree(null));
+    }
 }
