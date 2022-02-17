@@ -3,6 +3,7 @@ package ee.taltech.b_practise.assignment3;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Multiplier {
 
@@ -23,10 +24,12 @@ public class Multiplier {
             return params;
         }
 
-        List<Integer> multipliedList = new ArrayList<>();
-        for ( int i =0; params.size() > i ; i++){
-            multipliedList.add(multiplier* params.get(i));
-        }
-        return multipliedList;
+
+        //List<Integer> multipliedList = new ArrayList<>();
+
+        //for ( int i =0; params.size() > i ; i++){
+        //    multipliedList.add(multiplier* params.get(i));
+        //}
+        return params.stream().map(x -> x*multiplier).collect(Collectors.toList());
     }
 }
