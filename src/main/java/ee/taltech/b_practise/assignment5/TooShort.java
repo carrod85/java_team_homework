@@ -1,6 +1,7 @@
 package ee.taltech.b_practise.assignment5;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TooShort {
 
@@ -15,6 +16,11 @@ public class TooShort {
      * returns a list of string where length of a string is bigger than length (>)
      */
     public static List<String> filter(List<String> strings, int length){
-        return strings;
+        if( length <= 0 ){// int is a primitive so cannot be null
+            return strings;
+        }
+        List<String> result = strings.stream().filter(n -> n.length() > length).collect(Collectors.toList());
+
+        return result;
     }
 }
