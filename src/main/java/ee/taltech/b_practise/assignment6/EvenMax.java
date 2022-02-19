@@ -28,9 +28,9 @@ public class EvenMax {
     //todo D programmer has designed to return null on null/empty input
     // You can observe it on tests as: _null_is_maximum_of_no_numbers, _null_is_maximum_of_odd_numbers
     // Can you think of 2 different ways developer could have solved null/empty inputs?
-    // 1
-    // 2
+    // 1 One option can create another auxiliar function/method to filter input.
+    // 2 Other option to do it in the method where is needed (in this case there is only one)
     //todo E
     // Which option would you prefer and why?
-    // Answer:
+    // Answer: If you have to repeat it the same several times you should create and auxiliar method/function to filter.
 }
