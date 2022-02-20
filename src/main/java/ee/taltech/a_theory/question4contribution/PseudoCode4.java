@@ -9,29 +9,33 @@ public class PseudoCode4 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1
-    // 2
-    // 3
-    // 4
-    // 5
-    // 6
-    // 7
-    // 8
-    // 9
-    // 10
-    // 11
-    // 12
+    // RunningTraining()
+    //     warmUp()
+    //         cardio(lvl='low');
+    //         Streching(lvl='medium');
+    //     startRun()
+    //         lvl = 100;
+    //         if ankle_hurt == true
+    //             lvl = 70;
+    //         run(lvl)
+    //             if lvl == 70
+    //                 jogging;
+    //             else If lvl=100
+    //                 sprunt;
     //
+    //     Streching(lvl='max')
+    //     return endTraining = True;
+
 
     //todo B
     // Write pseudo codo for 2 tests for your code
-    //
-    //
-    //
-    //
-    //
-    //
-    //
+    // didHurt{
+    //  0 testing = RunningTraining().warmUp().cardio(max);}
+    // Assert.assertEquals(ankle_hurt,True);
+    // Test Code 2
+    // didHeEndTraining {
+    //  1 testing = RunningTraining()
+    // Assert.assertEquals(ndTraining, True)
     //
     //
     //
