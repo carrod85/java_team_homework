@@ -1,7 +1,8 @@
 package ee.taltech.c_extra.problem3;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.time.Period;
+import java.util.*;
 
 public class Birthdays {
 
@@ -10,7 +11,7 @@ public class Birthdays {
     // New classes were added like LocalDate, Period and others.
     // What does API mean in this context?
     // Answer:
-    //
+    // A set of packages that model the most important aspects of something defined
     //
     //
 
@@ -26,13 +27,32 @@ public class Birthdays {
     // Print out the result (age in years).
 
     public static void main(String[] args) {
+        ArrayList<LocalDate> birthDays = new ArrayList<>();
+        birthDays.add(LocalDate.of(2001, 5, 15));
+        birthDays.add(LocalDate.of(1996, 9, 18));
+        birthDays.add(LocalDate.of(2000, 3, 5));
+        birthDays.add(LocalDate.of(1983, 2, 23));
 
+        System.out.println(oldest(birthDays));
+        System.out.println();
+        ageOfPeople(birthDays);
     }
 
     /**
      * returns the oldest/earliest date
      */
     public static LocalDate oldest(List<LocalDate> birthDays){
-        return null;
+        return birthDays.stream().filter(Objects::nonNull).min(LocalDate::compareTo).orElse(null);
+    }
+
+    public static void ageOfPeople(List<LocalDate> birthDays){
+        LocalDate now = LocalDate.now();
+        for(LocalDate date : birthDays){
+            if((date != null) && (now != null)){
+                System.out.println(Period.between(date, now).getYears());
+            } else{
+                System.out.println("Not valid date");
+            }
+        }
     }
 }
