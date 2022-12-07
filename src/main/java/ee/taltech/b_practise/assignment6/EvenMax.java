@@ -22,6 +22,7 @@ public class EvenMax {
         }
 
         Integer max = params.stream().filter(n->n % 2 == 0).mapToInt(m->m).max().orElse(0);
+
         return max;
     }
 
